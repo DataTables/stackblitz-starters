@@ -1,29 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Home</title>
+    <title>DataTables HTML example</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
 
-    <link
-      href="https://cdn.datatables.net/v/dt/jq-3.7.0/dt-2.2.1/datatables.min.css?6"
-      rel="stylesheet"
-    />
-
-    <script src="https://cdn.datatables.net/v/dt/jq-3.7.0/dt-2.2.1/datatables.min.js?6"></script>
+{builder-cdn}
 
     <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
+    <script src="script.js"></script>
   </head>
   <body>
     <div id="app">
-      <h1>DataTables example</h1>
+      <h1>DataTables HTML example</h1>
       <p>
-        This example shows DataTables loaded via <code>script</code> tags and
-        Ajax loading object based data.
+        This example shows DataTables loaded via <code>script</code>
+        tags and Ajax loading object based data.
       </p>
 
-      <table id="example" class="display" style="width: 100%">
+      <table id="myTable" class="{table-class}">
         <thead>
           <tr>
             <th>Name</th>

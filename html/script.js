@@ -1,5 +1,5 @@
 addEventListener('DOMContentLoaded', () => {
-  let table = new DataTable('#example', {
+  let table = new DataTable('#myTable', {
     ajax: '/data.json',
     columns: [
       { data: 'name' },
@@ -7,7 +7,7 @@ addEventListener('DOMContentLoaded', () => {
       { data: 'office' },
       { data: 'extn' },
       { data: 'start_date' },
-      { data: 'salary' },
-    ],
+      { data: 'salary' }
+    ]
   });
 });
