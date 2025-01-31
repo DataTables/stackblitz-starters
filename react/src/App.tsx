@@ -2,8 +2,6 @@
 
 import './App.css';
 
-DataTable.use(DT);
-
 function App() {
   const columns = [
     { data: 'name' },
