@@ -1,6 +1,6 @@
 import './style.css';
 
-import DataTable from 'datatables.net-dt';
+{builder-import-esm}
 
 new DataTable('#myTable', {
   ajax: '/data.json',
@@ -10,6 +10,6 @@ new DataTable('#myTable', {
     { data: 'office' },
     { data: 'extn' },
     { data: 'start_date' },
-    { data: 'salary' },
-  ],
+    { data: 'salary' }
+  ]
 });

@@ -1,5 +1,4 @@
-import DataTable from 'datatables.net-react';
-import DT from 'datatables.net-dt';
+{builder-import-esm}
 
 import './App.css';
 

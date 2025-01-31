@@ -3,11 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DataTables demo</title>
+    <title>DataTables ESM demo</title>
   </head>
   <body>
     <div id="app">
-      <table id="myTable" class="display">
+      <h1>DataTables ESM loader example</h1>
+      <p>
+        This example shows DataTables loaded from NPM packages
+        using <em>Vite</em> as the package bundler, with
+        Typescript support. The data for the table is
+        object based and loaded by Ajax.
+      </p>
+
+      <table id="myTable" class="{table-class}">
         <thead>
           <tr>
             <th>Name</th>

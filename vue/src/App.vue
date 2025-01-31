@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import DataTable from 'datatables.net-vue3';
-import DataTablesCore from 'datatables.net';
+{builder-import-esm}
 
 DataTable.use(DataTablesCore);
 
@@ -57,5 +56,5 @@ const columns = [
 </template>
 
 <style>
-@import 'datatables.net-dt';
+{builder-import-css}
 </style>
