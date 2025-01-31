@@ -1,8 +1,6 @@
 <script setup lang="ts">
 {builder-import-esm}
 
-DataTable.use(DataTablesCore);
-
 const columns = [
   { data: 'name' },
   { data: 'position' },
