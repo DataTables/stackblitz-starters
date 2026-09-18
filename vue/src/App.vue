@@ -9,6 +9,8 @@ const columns = [
   { data: 'start_date' },
   { data: 'salary' },
 ];
+
+const options = {};
 </script>
 
 <template>
@@ -20,11 +22,13 @@ const columns = [
       load JSON data and display it in an interactive table. In this case we use
       object based row data, rather than arrays, so the
       <code>columns</code> option is specified to tell DataTables which property
-      to read from the objects for each column.
+      to read from the objects for each column and <code>options</code> is
+      available so you can set DataTables initialisation options.
     </p>
 
     <DataTable
       :columns="columns"
+      :options="options"
       ajax="/data.json"
       class="display"
       width="100%"
