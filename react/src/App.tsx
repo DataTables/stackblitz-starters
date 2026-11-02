@@ -3,15 +3,6 @@
 import './App.css';
 
 function App() {
-  const columns = [
-    { data: 'name' },
-    { data: 'position' },
-    { data: 'office' },
-    { data: 'extn' },
-    { data: 'start_date' },
-    { data: 'salary' },
-  ];
-
   return (
     <>
       <div>
@@ -22,24 +13,19 @@ function App() {
           package being used to display a DataTable with data sourced Ajax.
         </p>
         <p>
-          Full documentation for the DataTables React component is{' '}
-          <a href="https://datatables.net/manual/react">
-            available in the DataTables manual
-          </a>
-          .
+          For full documentation for the DataTables React component, please see
+          <a href="https://datatables.net/manual/components/react">the React DataTables
+          manual</a> which also includes a quick start guide, details on how to use
+          components in column cells, reference documentation and more examples.
         </p>
 
-        <DataTable ajax="/data.json" columns={columns} className="display">
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Position</th>
-              <th>Office</th>
-              <th>Extn.</th>
-              <th>Start date</th>
-              <th>Salary</th>
-            </tr>
-          </thead>
+        <DataTable ajax="/data.json" className="display">
+          <Column title="Name" data="name" />
+          <Column title="Position" data="position" />
+          <Column title="Office" data="office" />
+          <Column title="Extn." data="extn" />
+          <Column title="Start date" data="start_date" />
+          <Column title="Salary" data="salary" />
         </DataTable>
       </div>
     </>
